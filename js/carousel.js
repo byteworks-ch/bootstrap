@@ -217,7 +217,7 @@
     var target  = $this.attr('data-target') || href
     var $target = $(document).find(target)
 
-    if (!$target.hasClass('carousel')) return
+    if (!$target.hasClass('carousel')) return false;
 
     var options = $.extend({}, $target.data(), $this.data())
     var slideIndex = $this.attr('data-slide-to')
